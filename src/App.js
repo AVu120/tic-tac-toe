@@ -81,7 +81,7 @@ function App() {
             <p>
               Congratulations!!! The game was won by&nbsp;
               {playerTurn === "cross" ? <Cross /> : <Circle />}{" "}
-              &nbsp;&nbsp;&nbsp;.
+              &nbsp;&nbsp;&nbsp;&nbsp;.
             </p>
           ) : (
             <p>The game is tied!</p>
