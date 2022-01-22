@@ -8,7 +8,7 @@
   font-size: calc(10px + 2vmin);
 }
 
-section {
+main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -18,7 +18,7 @@ td {
   width: 10vw;
   max-width: 100px;
   border: solid 3px black;
-  margin:0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ td:nth-child(3) {
 }
 
 td:nth-child(4) {
-  border-left-color:white;
+  border-left-color: white;
 }
 
 td:nth-child(6) {
@@ -62,8 +62,15 @@ td:nth-child(9) {
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 40px;
   cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: grey 0px 0px 5px;
 }
 
 .gameOver {
@@ -72,4 +79,20 @@ button {
 
 .gameActive {
   cursor: pointer;
+}
+
+.winningCell {
+  background-color: greenyellow;
+}
+
+.gameStatus {
+  margin-bottom: 10px;
+  height: 60px;
+  width: 80vw;
+  position: relative;
+}
+
+.cross,
+.circle {
+  position: absolute;
 }
